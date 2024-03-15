@@ -8,9 +8,9 @@ qgisMinimumVersion=3.16
 description=Ta wtyczka porównuje dwie warstwy wektorowe
 version=0.1
 author=Seweryn Piasecki
-email=seweryn.piasecki@radom.lasy.gov.pl
+email=no@email
 
-about=Wtyczka porównuje dwie warstwy wektorowe i jako wynik tworzy dwie warstwy punktowe z różniącymi się węzłami. Warstwy przed porównaniem sprowadzane są do układu EPSG:2180. Węzły przed porównaniem są zaokrąglane przez przyciągniecie do siatki 0,01 m x 0,01 m.
+about=Wtyczka porównuje dwie warstwy wektorowe i jako wynik tworzy dwie warstwy punktowe z różniącymi się węzłami. Warstwy przed porównaniem przeliczane są do układu EPSG:2180. Węzły przed porównaniem są zaokrąglane przez przyciągniecie do siatki 0,01 m x 0,01 m.
 
 tracker=http://bugs
 repository=http://repo
