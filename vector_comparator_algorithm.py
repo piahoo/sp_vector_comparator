@@ -245,7 +245,7 @@ class vectorComparatorAlgorithm(QgsProcessingAlgorithm):
 
     def shortHelpString(self):
         return """<html><body><h2>Opis algorytmu</h2>
-<p>Algorytm porównuje dwie warstwy wektorowe i jako wynik tworzy dwie warstwy punktowe z różniącymi się węzłami. Węzły przed porównaniem są zaokrąglane przez przyciągniecie do siatki 0,01 m x 0,01 m.</p>
+<p>Algorytm porównuje dwie warstwy wektorowe i jako wynik tworzy dwie warstwy punktowe z różniącymi się węzłami. Warstwy przed porównaniem przeliczane są do EPSG:2180. Węzły przed porównaniem są zaokrąglane przez przyciągniecie do siatki 0,01 m x 0,01 m.</p>
 <h2>Parametry wejściowe</h2>
 <h3>Warstwa A</h3>
 <p>Pierwsza warstwa do porównania</p>
