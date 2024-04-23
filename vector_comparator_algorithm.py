@@ -47,8 +47,8 @@ import os
 class vectorComparatorAlgorithm(QgsProcessingAlgorithm):
 
     def initAlgorithm(self, config=None):
-        self.addParameter(QgsProcessingParameterMapLayer('Warstwadruga', 'Warstwa A', defaultValue=None, types=[QgsProcessing.TypeVectorAnyGeometry]))
-        self.addParameter(QgsProcessingParameterMapLayer('Warstwapierwsza', 'Warstwa B', defaultValue=None, types=[QgsProcessing.TypeVectorAnyGeometry]))
+        self.addParameter(QgsProcessingParameterMapLayer('Warstwadruga', 'Warstwa A', defaultValue=None, types=[QgsProcessing.TypeVectorPolygon]))
+        self.addParameter(QgsProcessingParameterMapLayer('Warstwapierwsza', 'Warstwa B', defaultValue=None, types=[QgsProcessing.TypeVectorPolygon]))
         self.addParameter(QgsProcessingParameterFeatureSink('RnaGeometriaADoB', 'Różna geometria A do B', type=QgsProcessing.TypeVectorAnyGeometry, createByDefault=True, defaultValue=None))
         self.addParameter(QgsProcessingParameterFeatureSink('RnaGeometriaBDoA', 'Różna geometria B do A', type=QgsProcessing.TypeVectorAnyGeometry, createByDefault=True, defaultValue=None))
         self.addParameter(QgsProcessingParameterFeatureSink('WarstwaAZaokrglona', 'Warstwa A (zaokrąglona)', type=QgsProcessing.TypeVectorAnyGeometry, createByDefault=True, supportsAppend=True, defaultValue=None))
